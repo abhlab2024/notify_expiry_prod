@@ -2,10 +2,9 @@
     <header>
 
         <p>Hello world</p>
-
-        <nav>
-            <a id="nav-settings" @click="selectTab('settings')">Settings</a>
-            <a id="nav-table" @click="selectTab('tabledata')">Data Table</a>
+        <nav class="navigations">
+            <a :class="{ active: props.active_tab === 'settings' }" id="nav-settings" @click="selectTab('settings')">Settings</a>
+            <a :class="{ active: props.active_tab === 'tabledata' }" id="nav-table" @click="selectTab('tabledata')">Data Table</a>
         </nav>
     </header>
 
@@ -15,6 +14,12 @@
 
 <script setup>
 
+const props = defineProps({
+  active_tab: {
+    type: String,
+    required: true,
+  },
+})
 
 const emit = defineEmits(['selectedTab']);
 

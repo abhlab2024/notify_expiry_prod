@@ -28,7 +28,7 @@
     <div class="content-container">
 
       <!-- either settings or table -->
-       <headerVue  @selectedTab="handleTabChange" />
+       <headerVue :active_tab="activeScreen"  @selectedTab="handleTabChange" />
 
       <!-- settings -->
 
@@ -156,6 +156,10 @@ header {
   display: flex;
   justify-content: space-between;
   border-radius: 4px;
+}
+
+.navigations a.active {
+  color: #ffdd57;
 }
 
 header nav a {
