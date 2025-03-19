@@ -2,7 +2,6 @@
 
 
 
-
   <!-- first login -->
   <div style="display: none;" class="main-container">
     <div class="content-container">
@@ -22,9 +21,6 @@
 
 
 
-
-
-
   <div v-if="sessionActive" class="main-container">
 
     <!-- header -->
@@ -32,16 +28,14 @@
     <div class="content-container">
 
       <!-- either settings or table -->
-      <headerVue :active_tab="activeScreen" @selectedTab="handleTabChange" />
+       <headerVue :active_tab="activeScreen"  @selectedTab="handleTabChange" />
 
       <!-- settings -->
 
-      <div v-if="activeScreen == 'settings'" id="settings-section" class="section">
+      <div v-if="activeScreen == 'settings'"  id="settings-section" class="section">
         <div class="settings">
           <h2>Settings</h2>
           <p>Configure your preferences here.</p>
-
-
 
         </div>
       </div>
@@ -82,10 +76,6 @@
 
   </div>
 
-  <h1>test: {{ t('welcome') }}</h1>
-
-
-  <button @click="switchLanguage('bn')">Switch to French</button>
 
 </template>
 
@@ -96,16 +86,8 @@
 
 import { ref } from 'vue';
 import headerVue from '@/components/header.vue';
-import { useI18n } from 'vue-i18n';
 
 
-// Access i18n in the component
-const { t, locale } = useI18n();
-
-// Method to switch the language
-const switchLanguage = (lang) => {
-  locale.value = lang;
-};
 
 
 const sessionActive = ref(true);
@@ -126,9 +108,6 @@ const activeScreen = ref('tabledata')
 // const switchToTabledata = () => {
 //   activeScreen.value = 'tabledata';
 // }
-
-
-
 
 
 

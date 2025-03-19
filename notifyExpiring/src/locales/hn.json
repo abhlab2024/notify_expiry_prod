@@ -1,0 +1,32 @@
+{
+    "welcome": "स्वागत",
+    "description": "This is an example of a fully internationalized message file.",
+    "home": {
+      "title": "Home Page",
+      "subtitle": "Discover our features",
+      "content": "We are glad to have you on board."
+    },
+    "user": {
+      "profile": {
+        "greeting": "Hello, {name}!",
+        "details": "You have {count} {count, plural, one {new message} other {new messages}}."
+      },
+      "actions": {
+        "login": "Login",
+        "logout": "Logout"
+      }
+    },
+    "notifications": {
+      "info": "You have {n} notifications",
+      "empty": "No notifications at the moment."
+    },
+    "errors": {
+      "network": "Network error, please check your connection.",
+      "server": "Server error occurred. Please try again later."
+    },
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel"
+    }
+  }
+  
