@@ -97,8 +97,6 @@
 import { ref } from 'vue';
 import headerVue from '@/components/header.vue';
 import { useI18n } from 'vue-i18n';
-
-
 // Access i18n in the component
 const { t, locale } = useI18n();
 

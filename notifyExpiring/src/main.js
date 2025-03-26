@@ -8,7 +8,7 @@ import { createI18n } from 'vue-i18n';
 // Import translations
 import en from '@/locales/en.json';
 import bn from '@/locales/bn.json';
-import hn from '@/locales/hn.json';
+import hn from '@/locales/hi.json';
 
 
 
